@@ -1,0 +1,34 @@
+Q.1  Explain Life cycle in Class Component and functional component with Hooks.
+
+Lifecycle in Class Components:-
+
+Imagine your component's life as a journey from birth to adulthood and finally departure.
+
+1. Birth (Mounting Phase):-
+   -> constructor() : You're born! This is where you get your initial traits and abilities.
+   -> render() : You show yourself to the world, displaying how you look.
+   -> componentDidMount() : You settle into your new surroundings, start making friends, and begin doing things.
+
+2. Growing Up (Updating Phase):-
+   -> shouldComponentUpdate(nextProps, nextState) : Before you change, you consider if it's necessary, like deciding if you really need a new outfit.
+   -> componentDidUpdate(prevProps, prevState) : After you change, you tell others about your updates or adjustments.
+
+3. Departure (Unmounting Phase):-
+   -> componentWillUnmount() : You say your goodbyes and clean up any mess you've made before leaving.
+
+Lifecycle in Functional Components with Hooks:-
+
+Now, picture your component's life as a series of tasks you do at different times.
+
+1. Starting Tasks (Mounting Phase):-
+   -> useState : You decide to keep certain things in your backpack.
+   -> useEffect : You plan when and how to do certain tasks.
+
+2. Ongoing Tasks (Updating Phase):
+   -> useState (again): You change what's in your backpack as you go along.
+   -> useEffect (again): You adjust your plans for tasks based on changes.
+
+3. Finishing Tasks (Unmounting Phase):-
+   -> useEffect (cleanup): You make sure to clean up after yourself before you're done with a task.
+
+In simple terms, in Class Components, you have different stages from birth to departure, each with its own set of actions. In Functional Components with Hooks, you imagine your component's life as a series of tasks that you start, continue, and finish. Hooks like `useState` help you manage what you carry, and `useEffect` helps you plan and adjust your tasks along the way.
